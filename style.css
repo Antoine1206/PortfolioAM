@@ -1,0 +1,389 @@
+.container{    /* C'est une classe qui me permettra d'automatiser le padding et le margin sur toute la page*/
+    max-width: 1060px;
+    padding: 0 15px;
+    margin: auto;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+
+h2{
+    font-family: "Lobster", cursive;
+    font-size: 30px;
+}
+
+body {
+    margin: 0;
+    font-family: "Baloo 2", cursive;
+    background-color:gainsboro;
+
+  }
+
+
+/************************
+* HEADER
+************************/
+
+nav{
+    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    height: 80px;
+    width: 100%;
+}
+
+nav img {
+    margin: 15px;
+    width: 150px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: black;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 30px;
+    text-transform: uppercase;
+  }
+
+nav ul li a:hover{
+    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    border:solid 3px black;
+    transition: .3s;
+}
+
+/************************
+* HOME
+************************/
+
+
+#home {
+    background-image: url(/Image/Planete.jpg);
+    background-size: cover;    /* Permet que le background fasse toute la largeur de la fenetre*/
+    background-position: center bottom;      /* Permet de centrer l'image sur la partie basse*/
+    color: white;
+    text-align: center;          /* Permet de centrer le texte au milieu, ici h1 et p*/
+    padding: 200px;       /* Permet de mettre une marge de 150px en dessous et dessus du pet h1*/
+    margin: auto;
+    font-size: 15px;
+}
+#home h1 {
+    font-family: "Lobster", cursive;
+    font-size: 50px;
+    padding: 0 15px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+    display: inline-block;
+    margin: 0 auto;
+ }
+
+
+  #apropos img {
+      width: 200px;
+      padding: 25px 50px;
+      border: dashed black;
+  }
+  #texte {
+        line-height: 30px;
+        text-indent: 40px;
+        padding: 40px;
+        font-size: 15px;
+  }
+
+
+/************************
+* A PROPOS
+************************/
+
+
+  #apropos {
+      display: flex;
+      align-items: center;
+      margin-top: 50px;
+  }
+
+  #apropos img {
+    width: 300px;
+  }
+
+
+/************************
+* COMPETENCE    QUALITE ET DEVELOPPEMENT
+QUALITE
+************************/
+#competence {
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+
+#div1 {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 10px;
+    font-family: "Baloo 2", cursive;
+}
+
+#div2 {
+    display: flex;
+    margin: 10px;
+    border: solid 5px black;
+    text-align: center;
+    align-items: center;
+    padding: 25px;
+}
+
+#div3{
+    padding: 10px;
+}
+
+#competence img {
+    width: 50px;
+}
+
+/************************
+* COMPETENCE    QUALITE ET DEVELOPPEMENT
+DEVELOPPEMENT
+************************/
+#cadre1{
+    padding: 20px;
+}
+
+#developpement h3 {
+    margin-bottom: 9px;
+}
+
+#div4{
+    border: solid 5px black;
+}
+
+
+
+/************************
+* PORTFOLIO, a faire mais sans javascript c'est compliqué sur ce que je veux faire
+************************/
+
+
+#portfolio{
+    
+}
+
+
+
+/************************
+* VALEUR
+************************/
+
+#valeur {
+    margin-top: 100px;
+}
+
+#valeur ul {
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
+
+
+#valeur img {
+    width: 310px;
+
+}
+#valeur h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+
+#valeur ul li {
+    border: solid black;
+    margin: 15px;
+    background-color:white;
+}
+
+#valeur ul li h3{
+    font-family: "Lobster", cursive;
+    font-size: 20px;
+}
+
+#contact div{
+    text-align: center;
+}
+
+
+/***********************
+*CONTACT
+***********************/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#contact {
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    height: 100vh;
+    font-family: "Baloo 2", cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+.title {
+    font-family: "Lobster", cursive;
+    padding: 0 15px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.title-1 {
+    background-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        transparent 68%,
+        #6fcffb 68%,
+        #6fcffb 95%,
+        transparent 95%
+    );
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.container2 {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    background-color: #222222;
+    border-radius: 3px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    padding: 30px 50px;
+}
+
+.form__group {
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form__label {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.form__input {
+    font-size: 16px;
+    font-family: inherit;
+    padding: 3px 10px;
+    border-radius: 3px;
+    border: none;
+    border-bottom: 4px solid transparent;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.form__input::-webkit-input-placeholder {
+    color: #000;
+    transform: translateY(4px);
+}
+
+.form__input:focus::-webkit-input-placeholder {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.form__input:focus {     /* c'est la que ya l'effet quand tu cliques sur le nom email ect*/
+    outline: none;
+    border-bottom: 4px solid #a5ee6e;
+    width: 66.6666%;
+    transition: all 0.3s;
+}
+
+.form__input:focus:invalid {
+    border-bottom: 4px solid #e94a2f;
+}
+
+.form__input:focus + .form__label {
+    opacity: 1;
+    font-size: 20px;
+}
+
+.form__message,
+.form__message .message__input {
+    width: 100%;
+}
+
+.submitBtn {
+    display: block;
+    padding: 5px 30px;
+    border: none;
+    outline: none;
+    background-color: #6fcffb;
+    border-radius: 30px;
+    margin: 20px auto;
+    font-size: 25px;
+    font-family: inherit;
+    color: #fff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.submitBtn:hover {
+    transform: scale(1.02) translateY(-2px);
+}
+.submitBtn:active {
+    transform: scale(0.98) translateY(1px);
+}
+
+
+
+
+/************************
+* FOOTER
+************************/
+
+footer {
+    border-top:solid 3px #839D2D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    padding: 30px;
+}
+footer div p {
+    margin: auto;
+    display: flex;
+}
+
+footer div img {
+    width: 35px;
+    padding-left: 20px;
+}
+
+hr {
+    border: none;
+    border-top: 3px double #839D2D;
+    color: #839D2D;
+    width: 75%;
+    text-align: center;
+    height: 5px;
+    align-items: center;
+    margin: auto;
+}
+
+
