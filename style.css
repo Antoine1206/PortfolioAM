@@ -65,7 +65,7 @@ nav ul li a:hover{
 
 
 #home {
-    background-image: url(/Image/Planete.jpg);
+    background-image: url(/Image/planete.jpg);
     background-size: cover;    /* Permet que le background fasse toute la largeur de la fenetre*/
     background-position: center bottom;      /* Permet de centrer l'image sur la partie basse*/
     color: white;
