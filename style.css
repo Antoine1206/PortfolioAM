@@ -282,9 +282,21 @@ DEVELOPPEMENT
     text-align: center;
 }
 @media (max-width: 375px) {
+    #valeur{
+        max-width: 250px;
+        
+    }
     #valeur ul {
         flex-direction: column;
-
+    }
+    #valeur h2{
+        font-size: large;
+    }
+    .container{
+        padding: 0px;
+    }
+    #valeur ul li{
+        margin: 0px;
     }
 }
 
@@ -298,9 +310,13 @@ RESPONSIVE TABLETTE ET TELEPHONE
     #valeur ul{
     flex-direction: column;
     align-items: center;
+    width: 80%;
     }
     #valeur{
         max-width: 310px;
+    }
+    #valeur img{
+        width: 100%;
     }
 }
 
@@ -401,13 +417,6 @@ RESPONSIVE TABLETTE ET TELEPHONE
     opacity: 0;
 }
 
-.form__input:focus {     /* c'est la que ya l'effet quand tu cliques sur le nom email ect*/
-    outline: none;
-    border-bottom: 4px solid #a5ee6e;
-    width: 66.6666%;
-    transition: all 0.3s;
-}
-
 .form__input:focus:invalid {
     border-bottom: 4px solid #e94a2f;
 }
@@ -450,6 +459,16 @@ RESPONSIVE TABLETTE ET TELEPHONE
 RESPONSIVE TELEPHONE
 ************************/
 
+@media (min-width : 500px){
+    .form__input:focus {     /* c'est la que ya l'effet quand tu cliques sur le nom email ect*/
+        outline: none;
+        border-bottom: 4px solid #a5ee6e;
+        width: 66.6666%;
+        transition: all 0.3s;
+    }
+}
+
+
 @media (max-width: 320px) {
     #contact{
         max-width: 320px;
@@ -462,7 +481,7 @@ RESPONSIVE TELEPHONE
         width: 320px;
     }
     .form__input{
-        width: 320px;
+        width:60%;
     }
 }
 
