@@ -86,9 +86,13 @@ nav ul li a:hover{
     background-position: center bottom;      /* Permet de centrer l'image sur la partie basse*/
     color: white;
     text-align: center;          /* Permet de centrer le texte au milieu, ici h1 et p*/
-    padding: 200px;       /* Permet de mettre une marge de 200px autour du pet h1*/
     margin: auto;
     font-size: 15px;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:center;
 }
 #home h1 {
     font-family: "Lobster", cursive;
@@ -124,7 +128,6 @@ nav ul li a:hover{
 
 @media (max-width: 320px) {
     #home{
-        padding: 100px;
     }
 }
 
@@ -284,7 +287,7 @@ DEVELOPPEMENT
 @media (max-width: 375px) {
     #valeur{
         max-width: 250px;
-        
+        margin-bottom: 200px;
     }
     #valeur ul {
         flex-direction: column;
