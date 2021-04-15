@@ -29,6 +29,7 @@ nav{
     background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
     height: 80px;
     width: 100%;
+    position: fixed;
 }
 
 nav img {
@@ -59,6 +60,20 @@ nav ul li a:hover{
     transition: .3s;
 }
 
+
+/************************
+* HEADER RESPONSIVE TABLETTE ET TELEPHONE
+************************/
+
+@media (max-width: 768px) {
+
+}
+
+
+@media (max-width: 320px) {
+
+}
+
 /************************
 * HOME
 ************************/
@@ -66,11 +81,12 @@ nav ul li a:hover{
 
 #home {
     background-image: url("image/planet.jpg");
+    width: 100%;
     background-size: cover;    /* Permet que le background fasse toute la largeur de la fenetre*/
     background-position: center bottom;      /* Permet de centrer l'image sur la partie basse*/
     color: white;
     text-align: center;          /* Permet de centrer le texte au milieu, ici h1 et p*/
-    padding: 200px;       /* Permet de mettre une marge de 150px en dessous et dessus du pet h1*/
+    padding: 200px;       /* Permet de mettre une marge de 200px autour du pet h1*/
     margin: auto;
     font-size: 15px;
 }
@@ -98,6 +114,22 @@ nav ul li a:hover{
 
 
 /************************
+* HOME RESPONSIVE TABLETTE ET TELEPHONE
+************************/
+
+  @media (max-width: 768px) {
+
+}
+
+
+@media (max-width: 320px) {
+    #home{
+        padding: 100px;
+    }
+}
+
+
+/************************
 * A PROPOS
 ************************/
 
@@ -111,6 +143,23 @@ nav ul li a:hover{
   #apropos img {
     width: 300px;
   }
+
+/************************
+* A PROPOS RESPONSIVE TABLETTE ET TELEPHONE
+************************/
+
+@media (max-width: 768px) {
+    #apropos{
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 425px) {
+
+}
+
+
 
 
 /************************
@@ -145,6 +194,24 @@ QUALITE
 #competence img {
     width: 50px;
 }
+
+/************************
+* COMPETENCE => QUALITE ET DEVELOPPEMENT,
+RESPONSIVE TABLETTE ET TELEPHONE
+************************/
+
+@media (max-width: 768px) {
+    #div1{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 425px) {
+
+}
+
 
 /************************
 * COMPETENCE    QUALITE ET DEVELOPPEMENT
@@ -214,6 +281,34 @@ DEVELOPPEMENT
 #contact div{
     text-align: center;
 }
+@media (max-width: 375px) {
+    #valeur ul {
+        flex-direction: column;
+
+    }
+}
+
+
+/************************
+* * VALEUR,
+RESPONSIVE TABLETTE ET TELEPHONE
+************************/
+
+@media (max-width: 768px) {
+    #valeur ul{
+    flex-direction: column;
+    align-items: center;
+    }
+    #valeur{
+        max-width: 310px;
+    }
+}
+
+
+@media (max-width: 425px) {
+
+}
+
 
 
 /***********************
@@ -350,7 +445,26 @@ DEVELOPPEMENT
     transform: scale(0.98) translateY(1px);
 }
 
+/************************
+*CONTACT,
+RESPONSIVE TELEPHONE
+************************/
 
+@media (max-width: 320px) {
+    #contact{
+        max-width: 320px;
+    }
+    .container2{
+        width: 320px;
+        padding: 15px 25px;
+    }
+    .form__group{
+        width: 320px;
+    }
+    .form__input{
+        width: 320px;
+    }
+}
 
 
 /************************
@@ -385,5 +499,3 @@ hr {
     align-items: center;
     margin: auto;
 }
-
-
