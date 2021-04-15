@@ -250,18 +250,21 @@ DEVELOPPEMENT
 ************************/
 
 #valeur {
-    margin-top: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 #valeur ul {
     display: flex;
     list-style: none;
     text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 
 #valeur img {
-    width: 310px;
+    width: 100%;
 
 }
 #valeur h2 {
@@ -274,6 +277,7 @@ DEVELOPPEMENT
     border: solid black;
     margin: 15px;
     background-color:white;
+    width: 310px;
 }
 
 #valeur ul li h3{
@@ -313,7 +317,8 @@ RESPONSIVE TABLETTE ET TELEPHONE
     #valeur ul{
     flex-direction: column;
     align-items: center;
-    width: 80%;
+    }
+    #valeur ul li {
     }
     #valeur{
         max-width: 310px;
@@ -343,13 +348,14 @@ RESPONSIVE TABLETTE ET TELEPHONE
 
 #contact {
     background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
-    height: 100vh;
+    height: 800px;
     font-family: "Baloo 2", cursive;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
     font-size: 18px;
+
 }
 
 .title {
@@ -380,7 +386,7 @@ RESPONSIVE TABLETTE ET TELEPHONE
     background-color: #222222;
     border-radius: 3px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    padding: 30px 50px;
+    padding: 30px 43px;
 }
 
 .form__group {
